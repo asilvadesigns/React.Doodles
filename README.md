@@ -2,4 +2,4 @@
 my react doodles and attempt to learn
 
 # Setup
-npm i && npm start
+`npm i && npm start`
