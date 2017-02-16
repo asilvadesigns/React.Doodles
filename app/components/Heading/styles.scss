@@ -1,28 +1,76 @@
+$debug: false;
+
 .heading {
   font-family: sans-serif;
   font-weight: normal;
+  margin-bottom: 1.6rem;
+  line-height: 1;
 }
 
 .h1 {
-  font-size: 6rem;
+  font-size: 3.998rem;
 }
 
 .h2 {
-  font-size: 5rem;
+  font-size: 2.827rem;
 }
 
 .h3 {
-  font-size: 4rem;
+  font-size: 1.999rem;
 }
 
 .h4 {
-  font-size: 3rem;
+  font-size: 1.414rem;
 }
 
 .h5 {
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .h6 {
-  font-size: 1rem;
+  font-size: 0.707rem;
+}
+
+@if $debug {
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  .h5,
+  .h6 {
+    position: relative;
+
+    &:after {
+      position: absolute;
+      top: 0;
+      left: -0.5rem;
+      display: block;
+      font-size: 1em;
+      opacity: 0.2;
+    }
+  }
+
+  .h1:after {
+    content: "1";
+  }
+
+  .h2:after {
+    content: "2";
+  }
+
+  .h3:after {
+    content: "3";
+  }
+
+  .h4:after {
+    content: "4";
+  }
+
+  .h5:after {
+    content: "5";
+  }
+
+  .h6:after {
+    content: "6";
+  }
 }
