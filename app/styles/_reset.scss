@@ -1,8 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font: inherit;
+
   color: inherit;
+
+  font: inherit;
 }
 
 html {
@@ -10,10 +12,22 @@ html {
 }
 
 body {
-  line-height: 1.6;
   font-family: sans-serif;
+  line-height: 1.6;
 }
 
 p {
   margin-bottom: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  height: 1px;
+  margin: 1.6rem 0;
+
+  border: 0;
+  background-color: currentColor;
 }
