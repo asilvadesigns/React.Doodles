@@ -1,8 +1,7 @@
 import React, { Component, PropTypes } from 'react';
-import Sizes from '../../styles/base';
+import Base from '../../styles/base';
 import cx from 'classNames';
 import sx from './styles.scss';
-
 
 class Heading extends Component {
   render() {
@@ -17,24 +16,14 @@ class Heading extends Component {
   }
 }
 
-/*
- *  don't specify default size because heading size is based on it's
- *  level which is required.
- */
 Heading.defaultProps = {
   level: '5',
   children: 'hello world!'
 }
 
-/*
- *  ensure that the heading component will recieve a size and level
- *  prop, we don't require size because by default the size will be
- *  determined by the level that is set. So that a level 2 heading
- *  will by styled like a size 2 and so on.
- */
 Heading.propTypes = {
-  size: PropTypes.oneOf(Sizes),
-  level: PropTypes.oneOf(Sizes).isRequired,
+  size: PropTypes.oneOf(Base.HeadingSizes),
+  level: PropTypes.oneOf(Base.HeadingSizes).isRequired,
   children: PropTypes.string
 }
 

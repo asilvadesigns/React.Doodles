@@ -10,9 +10,9 @@ class App extends Component {
     return (
       <div className={cx(sx.app)}>
         <Container>
-          <Heading />
+          <Heading level='2' size='4'>Page Heading</Heading>
           <p>Elit aspernatur laudantium porro maxime ea assumenda hic ad corrupti autem aut. Esse vero doloribus deleniti sit beatae maxime. Maiores accusantium magnam quisquam nam earum dolores pariatur quis voluptates cupiditate.</p>
-          <Button />
+          <Button size='sm'>I"m a button, click me </Button>
         </Container>
       </div>
     )

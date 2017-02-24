@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react';
+import Base from '../../styles/base';
 import cx from 'classNames';
 import sx from './styles.scss';
 
@@ -22,7 +23,7 @@ class Button extends Component {
     const ActiveClass = {[sx.active]: this.state.isActive};
     const HandleClick = this.props.onClick ? this.props.onClick : this.toggleState
     return (
-      <button className={cx(sx.button, ActiveClass)} onClick={HandleClick}>
+      <button className={cx(sx.button, sx[`${this.props.size}`], ActiveClass)} onClick={HandleClick}>
         {this.props.children}
       </button>
     )
@@ -30,10 +31,12 @@ class Button extends Component {
 }
 
 Button.defaultProps = {
+  size: 'md',
   children: 'Hello World!'
 }
 
 Button.propTypes = {
+  size: PropTypes.oneOf(Base.ButtonSizes).isRequired,
   children: PropTypes.node.isRequired
 }
 

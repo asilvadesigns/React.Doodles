@@ -1,4 +1,4 @@
-const Sizes = [
+const headings = [
   '1',
   '2',
   '3',
@@ -7,4 +7,17 @@ const Sizes = [
   '6'
 ];
 
-export default Sizes;
+const buttons = [
+  'xs',
+  'sm',
+  'md',
+  'lg',
+  'xl'
+];
+
+const Base = {
+  ButtonSizes: buttons,
+  HeadingSizes: headings
+}
+
+export default Base;

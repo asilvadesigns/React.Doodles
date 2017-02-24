@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './components/App';
+import Shell from './screens/Shell';
 
 ReactDOM.render(
-  <App />,
+  <Shell />,
   document.getElementById('app')
 )

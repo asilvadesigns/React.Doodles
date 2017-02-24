@@ -9,14 +9,29 @@
   border-radius: 0.2rem;
   background-color: transparent;
 
-  transition-property: background-color, border-color;
+  transition-property: background-color, border-color, color;
   transition-duration: 0.25s;
   transition-timing-function: ease-in-out;
-
-  &.active {
-    color: white;
-    border-color: dodgerblue;
-    background-color: dodgerblue;
-  }
 }
 
+.active {
+  color: white;
+  border-color: dodgerblue;
+  background-color: dodgerblue;
+}
+
+.xs {
+  padding: 0.2rem 0.2rem;
+}
+
+.sm {
+  padding: 0.4rem 0.8rem;
+}
+
+.md {
+  padding: 0.8rem 1.6rem;
+}
+
+.lg {
+  padding: 1.0rem 2.0rem;
+}
