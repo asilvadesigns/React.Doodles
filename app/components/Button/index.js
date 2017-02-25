@@ -1,4 +1,6 @@
+//core
 import React, { Component, PropTypes } from 'react';
+//styles
 import Base from '../../styles/base';
 import cx from 'classNames';
 import sx from './styles.scss';

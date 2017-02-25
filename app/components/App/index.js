@@ -1,7 +1,10 @@
+//core
 import React, { Component } from 'react';
+//components
 import Container from '../Container';
 import Heading from '../Heading';
 import Button from '../Button';
+//styles
 import cx from 'classNames';
 import sx from './styles.scss';
 

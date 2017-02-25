@@ -1,12 +1,15 @@
+//core
 import React, { Component } from 'react';
 import {
   BrowserRouter as Router,
   Route,
-  Link,
-  hashHistory
+  NavLink,
+  IndexLink
 } from 'react-router-dom';
+//screens
 import About from '../About';
 import Home from '../Home';
+//styles
 import cx from 'classNames';
 import sx from './styles.scss';
 
@@ -15,13 +18,11 @@ class Shell extends Component {
     return (
       <Router className={cx(sx.shell)}>
         <div>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About</Link></li>
-          </ul>
+          <NavLink activeClassName="active" exact to="/">Home</NavLink>
+          <NavLink activeClassName="active" to="/about">About</NavLink>
           <hr/>
-          <Route component={Home} exact path="/"></Route>
-          <Route component={About} path="/about">about</Route>
+          <Route component={Home} exact path="/"/>
+          <Route component={About} path="/about"/>
         </div>
       </Router>
     )
